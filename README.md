@@ -1,6 +1,11 @@
 # xymon2Influxdb
 Script to process and resend metric data from xymon hosts (rrd) to Influxdb. From acens technologies.
 
+## dependencies
+
+sudo pip3 install influxdb
+sudo pip3 install toml
+
 ## activate script
 Download script from githup:
 ```
@@ -37,7 +42,7 @@ configfile is a toml file type:
 ```
 # This is a TOML document.
 [xymon]  # xymon server hostname. No fqdn
-dbname = "xymon"
+dbname = "xymon"   # Do not use admin user please!!!!
 user = "admin"
 password = "ChangeMeNOW!"
 logfile = "/var/log/xymon2Influxdb.base.log"
