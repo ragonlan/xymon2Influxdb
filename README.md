@@ -2,10 +2,10 @@
 Script to process and resend metric data from xymon hosts (rrd) to Influxdb. From acens technologies.
 
 ## dependencies
-
+```bash
 sudo pip3 install influxdb
 sudo pip3 install toml
-
+```
 ## activate script
 Download script from githup:
 ```bash
