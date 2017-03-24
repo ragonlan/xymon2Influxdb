@@ -1,0 +1,12 @@
+# This is a TOML document.
+[xymon]  # xymon server hostname. No fqdn
+dbname = "xymon"
+user = "admin"
+password = "ChangeMeNOW!"
+logfile = "/var/log/xymon2Influxdb.base.log"
+metrics2Proccess = 30
+verbose = false 
+[xymon.data]
+logfile = "/var/log/xymon2Influxdb.data.log"
+
+
