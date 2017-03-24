@@ -27,9 +27,7 @@ Edit task.cfg and modify rrdstatus and rrddata seccion:
 [rrdstatus]
         ENVFILE /usr/lib/xymon/server/etc/xymonserver.cfg
         NEEDS xymond
-        CMD xymond_channel --channel=status --log=$XYMONSERVERLOGS/rrd-status.log xymond_rrd --rrddir=$XYMONVAR/rrd --processor="/usr/local/b
-in/xymon2Influxdb/xymon2Influxdb.py" --desc=base
-
+        CMD xymond_channel --channel=status --log=$XYMONSERVERLOGS/rrd-status.log xymond_rrd --rrddir=$XYMONVAR/rrd --processor="/usr/local/bin/xymon2Influxdb/xymon2Influxdb.py" --desc=base
 
 [rrddata]
         ENVFILE /usr/lib/xymon/server/etc/xymonserver.cfg
