@@ -196,14 +196,14 @@ def getConfig(hostname, desc):
     except e:
         print("Can't open config file")
     #    print(PrettyLog(configDetails))
-    #defaultConfig = {hostname: {'influxserver' : 'influxdb.acens.priv', 'port': 8086, 'user': 'admin', 'password': 'Manolo007.toloro', 'dbname': 'xymon', 'logfile': '/var/log/xymon2Influxdb.log', 'test': [], 'extratag': [], 'verbose': False}}
+    #defaultConfig = {hostname: {'influxserver' : 'influxserver.domain.local', 'port': 8086, 'user': 'UserIvent', 'password': 'PassWordIvent', 'dbname': 'xymon', 'logfile': '/var/log/xymon2Influxdb.log', 'test': [], 'extratag': [], 'verbose': False}}
     #completeDetails = {hostname:{}}
     defaultConfig = {
         hostname: {
-            'influxserver': 'influxdb.acens.priv',
+            'influxserver': 'influxserver.domain.local',
             'port': 8086,
-            'user': 'admin',
-            'password': 'Manolo007.toloro',
+            'user': 'UserIvent',
+            'password': 'PassWordIvent',
             'dbname': 'xymon',
             'logfile': '/var/log/xymon2Influxdb.log',
             'metrics2Proccess': 10,
